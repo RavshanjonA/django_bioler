@@ -54,7 +54,7 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": 10,
 }
 
-INSTALLED_APPS = THIRD_PARTY_APPS+ DJANGO_APPS + CUSTOM_APPS
+INSTALLED_APPS = THIRD_PARTY_APPS + DJANGO_APPS + CUSTOM_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -108,7 +108,6 @@ DATABASES = {
         "ATOMIC_REQUESTS": True,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
