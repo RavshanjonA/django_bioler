@@ -10,3 +10,4 @@ python-environ==0.4.54
 environs==9.5.0
 psycopg2-binary==2.9.6
 pre-commit==3.2.2
+django-recaptcha==3.0.0

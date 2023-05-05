@@ -1,4 +1,4 @@
-JAZZMIN_SETTINGS = {
+JAZZMIN_SETTINGS: dict = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
     "site_title": "Site Admin",
     # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
@@ -117,5 +117,5 @@ JAZZMIN_SETTINGS = {
         "auth.group": "vertical_tabs",
     },
     # Add a language dropdown into the admin
-    # "language_chooser": True,
+    "language_chooser": True,
 }

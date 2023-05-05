@@ -11,10 +11,10 @@ virtualenv venv
 
 source venv/bin/activate
 
-**pip install -r requirments/base.txt** 
+**pip install -r requirments/base.txt**
 
 create .env file
 
 ## Add static folder
 
-Enjoy! 
+Enjoy!
