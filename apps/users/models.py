@@ -1,5 +1,6 @@
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
-from django.db.models import BooleanField, CharField, EmailField, ImageField, ManyToManyField
+from django.db.models import (BooleanField, CharField, EmailField, ImageField,
+                              ManyToManyField)
 from django.utils.translation import gettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
 
