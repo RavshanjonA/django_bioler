@@ -13,7 +13,7 @@ class CustomUserAdmin(UserAdmin):
     list_filter = ["email", "is_staff", "is_active"]
     fieldsets = (
         (None, {"fields": ("email", "phone_number", "username", "password")}),
-        ("Details", {"fields": ("profile_photo", "first_name", "last_name", "gender")}),
+        ("Details", {"fields": ("profile_photo", "first_name", "last_name")}),
         ("Permissions", {"fields": ("is_staff", "is_superuser", "is_active", "groups", "user_permissions")}),
     )
     add_fieldsets = (
@@ -35,7 +35,16 @@ class CustomUserAdmin(UserAdmin):
                 ),
             },
         ),
-        ("Details", {"fields": ("profile_photo", "first_name", "last_name", "gender")}),
+        (
+            "Details",
+            {
+                "fields": (
+                    "profile_photo",
+                    "first_name",
+                    "last_name",
+                )
+            },
+        ),
     )
     search_fields = ("email",)
     ordering = ("-created_at",)
